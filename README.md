@@ -50,6 +50,68 @@ Remove the ```.git``` and you're done!
 
 #### Project Structure
 
+```bash
+├── public
+|   |   ├── next.svg
+|   |   ├── vercel.svg
+├── src
+|   ├── app
+|   |   |   ├── favicon.ico
+|   |   |   ├── globals.css
+|   |   |   ├── layout.tsx
+|   |   |   ├── not-found.tsx
+|   |   |   ├── page.tsx
+|   ├── components
+|   |   ├── layout
+|   |   |   |   ├── footer.tsx
+|   |   |   |   ├── header.tsx
+|   |   |   |   ├── index.tsx
+|   |   ├── ui
+|   |   |   |   ├── accordion.tsx
+|   |   |   |   ├── alert.tsx
+|   |   |   |   ├── avatar.tsx
+|   |   |   |   ├── badge.tsx
+|   |   |   |   ├── button.tsx
+|   |   |   |   ├── calendar.tsx
+|   |   |   |   ├── card.tsx
+|   |   |   |   ├── checkbox.tsx
+|   |   |   |   ├── dialog.tsx
+|   |   |   |   ├── drawer.tsx
+|   |   |   |   ├── dropdown-menu.tsx
+|   |   |   |   ├── form.tsx
+|   |   |   |   ├── input-otp.tsx
+|   |   |   |   ├── input.tsx
+|   |   |   |   ├── label.tsx
+|   |   |   |   ├── progress.tsx
+|   |   |   |   ├── scroll-area.tsx
+|   |   |   |   ├── select.tsx
+|   |   |   |   ├── skeleton.tsx
+|   |   |   |   ├── sonner.tsx
+|   |   |   |   ├── tabs.tsx
+|   |   |   |   ├── textarea.tsx
+|   |   |   |   ├── toast.tsx
+|   |   |   |   ├── toaster.tsx
+|   |   |   |   ├── use-toast.ts
+|   |   |   ├── theme-provider.tsx
+|   |   |   ├── toggle.tsx
+|   ├── lib
+|   |   |   ├── utils.ts
+|   ├── services
+|   |   |   ├── api.ts
+|   ├── .env
+|   ├── .eslintrc.json
+|   ├── .gitignore
+|   ├── components.json
+|   ├── LICENSE.md
+|   ├── next.config.mjs
+|   ├── package-lock.json
+|   ├── package.json
+|   ├── postcss.config.mjs
+|   ├── README.md
+|   ├── tailwind.config.ts
+|   ├── tsconfig.json
+```
+
 #### Contribution
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
