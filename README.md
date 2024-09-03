@@ -50,7 +50,7 @@ Remove the ```.git``` and you're done!
 
 #### Project Structure
 
-```cmd
+```
 ├── public
 |   |   ├── next.svg
 |   |   ├── vercel.svg
