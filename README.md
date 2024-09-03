@@ -8,10 +8,12 @@ An all-in-one boilerplate to quickly start Next.js projects with the most common
 
 - next.js;
 - typeScript;
+- middleware;
 - tailwind css;
-- shadcn.ui;
+- shadcn/ui;
 - next-theme;
-- geist.
+- geist;
+- frame-motion.
 
 #### Installation
 
@@ -43,14 +45,12 @@ Remove the ```.git``` and you're done!
 
 #### Other features to add
 
-- frame-motion;
 - support for mdx;
-- middleware;
 - react-query.
 
 #### Project Structure
 
-```bash
+```cmd
 ├── public
 |   |   ├── next.svg
 |   |   ├── vercel.svg
@@ -67,49 +67,16 @@ Remove the ```.git``` and you're done!
 |   |   |   |   ├── header.tsx
 |   |   |   |   ├── index.tsx
 |   |   ├── ui
-|   |   |   |   ├── accordion.tsx
-|   |   |   |   ├── alert.tsx
-|   |   |   |   ├── avatar.tsx
-|   |   |   |   ├── badge.tsx
-|   |   |   |   ├── button.tsx
-|   |   |   |   ├── calendar.tsx
-|   |   |   |   ├── card.tsx
-|   |   |   |   ├── checkbox.tsx
-|   |   |   |   ├── dialog.tsx
-|   |   |   |   ├── drawer.tsx
-|   |   |   |   ├── dropdown-menu.tsx
-|   |   |   |   ├── form.tsx
-|   |   |   |   ├── input-otp.tsx
-|   |   |   |   ├── input.tsx
-|   |   |   |   ├── label.tsx
-|   |   |   |   ├── progress.tsx
-|   |   |   |   ├── scroll-area.tsx
-|   |   |   |   ├── select.tsx
-|   |   |   |   ├── skeleton.tsx
-|   |   |   |   ├── sonner.tsx
-|   |   |   |   ├── tabs.tsx
-|   |   |   |   ├── textarea.tsx
-|   |   |   |   ├── toast.tsx
-|   |   |   |   ├── toaster.tsx
-|   |   |   |   ├── use-toast.ts
+|   |   |   |   ├── ....tsx
 |   |   |   ├── theme-provider.tsx
 |   |   |   ├── toggle.tsx
 |   ├── lib
 |   |   |   ├── utils.ts
+|   |   |   ├── constants.ts
 |   ├── services
 |   |   |   ├── api.ts
 |   ├── .env
-|   ├── .eslintrc.json
-|   ├── .gitignore
-|   ├── components.json
-|   ├── LICENSE.md
-|   ├── next.config.mjs
-|   ├── package-lock.json
-|   ├── package.json
-|   ├── postcss.config.mjs
-|   ├── README.md
-|   ├── tailwind.config.ts
-|   ├── tsconfig.json
+|   ├── .middleware.ts
 ```
 
 #### Contribution

@@ -1,39 +1,52 @@
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
+import { WEBSITE_HOST_URL } from '@/lib/constants'
+import { GeistSans } from 'geist/font/sans';
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
+const meta = {
+  title: 'nextjs-boilerplate',
+  description:
+    'Do you want a next project? Start here.',
+  image: `${WEBSITE_HOST_URL}/og-preview.jpg`,
+}
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nextjs-boilerplate.com/"),
   title: {
-    default: "nextjs-boilerplate",
-    template: "%s - Do you want a next project? Start here.",
+    default: meta.title,
+    template: '%s | nextjs-boilerplate',
   },
-  description: "Do you want a next project? Start here.",
+  keywords: [
+    "nextjs-boilerplate",
+    "Boilerplate",
+    "Otoniel Emanuel",
+    "Otoniel",
+    "Emanuel",
+    "euotiniel.com",
+    "UI Design",
+    "Front-end Developer",
+    "Frontend",
+    "Developer",
+    "Software",
+    "Design",
+    "Next.js",
+    "TailwindCSS",
+    "Open source",
+  ],
+  description: meta.description,
   openGraph: {
-    title: "nextjs-boilerplate - Do you want a next project? Start here.",
-    description: "Do you want a next project? Start here.",
-    url: "https://nextjs-boilerplate.com/",
-    siteName: "nextjs-boilerplate - Do you want a next project? Start here.",
-    locale: "en_US",
-    type: "website",
+    title: meta.title,
+    description: meta.description,
+    url: WEBSITE_HOST_URL,
+    siteName: meta.title,
+    locale: 'en-US',
+    type: 'website',
+      
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
+  alternates: {
+    canonical: WEBSITE_HOST_URL,
   },
-  twitter: {
-    title: "nextjs-boilerplate - Do you want a next project? Start here.",
-    card: "summary_large_image",
-  },
-};
+}
 
 export default function RootLayout({
   children,
